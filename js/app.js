@@ -19,7 +19,7 @@ const showProducts = (products) => {
       <div>
       <img class="product-image" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
+      <h3 class="product-title">${product.title}</h3>
       <p>Category: ${product.category}</p>
       <div class="ratings">
         <div class="stars-outer">
@@ -28,10 +28,11 @@ const showProducts = (products) => {
         <p>(${product.rating.rate})</p>
       </div>
       <p><small>Reviews : (${product.rating.count})</small></p>
-      <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
-      `;
+      <h2 class="product-title">Price: $ ${product.price}</h2>
+      <div class="btn-align2">
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">Add to cart</button>
+      <button id="details-btn" class="btn btn-danger">Details</button>
+      </div>`;
     document.getElementById("all-products").appendChild(div);
   }
 };
