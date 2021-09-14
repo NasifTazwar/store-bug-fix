@@ -45,21 +45,11 @@ const addToCart = (id, price) => {
   document.getElementById("total-Products").innerText = count;
 };
 
-//Get Ratings
+
 
 const getRatings =(rate)=>{
   const starPercentage = (rate/ 5) * 100;
   const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-  // /* document.getElementById("stars-inner").style.width = starPercentageRounded; */
-
-  // // document.getElementsByClassName('stars-inner').width = starPercentageRounded;
-
-  // let boxes = document.getElementsByClassName('stars-inner');
-
-  // // Array.from(boxes).forEach(v => v.style.width = starPercentageRounded);
-  // for(const box of boxes){
-  //   box.style.width = starPercentageRounded;
-  // }
   return starPercentageRounded;
 }
 
@@ -81,6 +71,7 @@ const updatePrice = (id, value) => {
 const setInnerText = (id, value) => {
   document.getElementById(id).innerText = (Math.round(value * 100) / 100).toFixed(2);
 };
+//set delivery charge
 const setInnerTextOfDeliveryCharge = (id, value) => {
   document.getElementById(id).innerText =value;
 };

@@ -28,7 +28,6 @@ body {
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -45,17 +44,16 @@ body {
   padding: 10px;
   transition: 0.6s;
   width: 100%;
-  /* min-height: 538px; */
   min-height: 523px;
   border: 2px solid #BABEC1;
   border-radius: 5px;
   margin: 0 10px 0 10px;
   position: relative;
 }
+/* aligning buttons */
 .btn-align2{
   position: absolute;
   bottom: 2%;
-  /* right: 25%; */
   right: 20%;
   left: 20%;
 }
@@ -70,8 +68,8 @@ body {
   width: 150px;
   height: 150px;
 }
+/* cart */
 .cart {
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -81,6 +79,8 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/* Rating Start */
 .stars-outer {
   display: inline-block;
   position: relative;
@@ -96,7 +96,6 @@ body {
 .stars-outer::before {
   content: "\f005 \f005 \f005 \f005 \f005";
   font-family: 'Font Awesome 5 Free';
-  /* font-weight: 900; */
   color: #ccc;
 }
  
@@ -111,6 +110,7 @@ body {
   align-items: baseline;
   gap: 5px;
 }
+/* Rating End */
 .form-control-borderless {
   border: none;
 }
